@@ -37,8 +37,8 @@ can be used for a modified build. No MSYS2 installation is needed to run Aya.
 
 Aya's release script uses the vendored, byte-for-byte original official binary
 package, verifies its SHA-256, and uses the corresponding `libgmp.dll.a` import
-library. It does not alter the installed GHC archives. The import library supplies DLL import thunks
-before those archives are searched, so GMP calls resolve to the replaceable
+library. It does not alter the installed GHC archives. The import library
+supplies DLL import thunks before those archives are searched, so GMP calls resolve to the replaceable
 DLL. Full musical, Integer/Rational, render and native-worker checks were run on
 that result; the original example WAV is byte-identical to the earlier local
 build. Normal source builds and release builds are distinguished in

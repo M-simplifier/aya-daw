@@ -20,8 +20,8 @@ network access is needed to obtain it. Exact source and binary URLs and SHA-256
 values are recorded in [runtime-lock.json](third-party/runtime-lock.json).
 
 The exact original MSYS2 binary package is vendored in the source repository
-under `third-party/binaries/`
-and checked against that same published hash, so source builds and CI do not
+under `third-party/binaries/` and checked against that same published hash,
+so source builds and CI do not
 depend on an interactive mirror/CDN download. The package is preserved verbatim.
 Its original manuals retain GNU FDL 1.3-or-later terms, no invariant sections,
 and the original cover texts; their notice/license and complete source are
@@ -49,8 +49,8 @@ original notice files. Original subdirectory names are retained, so distinct
 notices in one package are not overwritten.
 
 The audited Haskell declarations are BSD-2-Clause/BSD-3-Clause, MIT, ISC and
-Zlib, including older `BSD2`/`BSD3` spelling. Crypton's additional BSD, MIT and
-ISC alternatives and notices are retained in full. The manifest's declarations
+Zlib, including older `BSD2`/`BSD3` spelling. Crypton's BSD, MIT and ISC component
+terms and notices are retained in full; its declaration uses `AND`. The manifest's declarations
 are inventory data; the accompanying original texts govern each dependency.
 
 The source snapshot is under `third-party/notices/`. Release packages contain
