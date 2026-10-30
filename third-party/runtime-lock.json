@@ -1,0 +1,15 @@
+{
+  "gmp": {
+    "package": "mingw-w64-x86_64-gmp",
+    "version": "6.3.0-2",
+    "license": "LGPL-3.0-or-later",
+    "binaryUrl": "https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-gmp-6.3.0-2-any.pkg.tar.zst",
+    "binarySha256": "8924433974c4add46cb46ea4f6ef283b5c5139d3f552375115b5580f855015cc",
+    "sourceUrl": "https://mirror.msys2.org/mingw/sources/mingw-w64-gmp-6.3.0-2.src.tar.zst",
+    "sourceSha256": "f288f944fd9609db220bcf6a8dd0703a5674eeb906ef35eb8485bb8192135994",
+    "upstreamSourceSha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+    "sourceFile": "sources/mingw-w64-gmp-6.3.0-2.src.tar.zst",
+    "dll": "mingw64/bin/libgmp-10.dll",
+    "importLibrary": "mingw64/lib/libgmp.dll.a"
+  }
+}

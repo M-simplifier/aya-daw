@@ -1,0 +1,1614 @@
+{
+  "schemaVersion": 1,
+  "target": "aya executable",
+  "compiler": "ghc-9.14.1",
+  "haskellPackages": [
+    {
+      "package": "OneTuple",
+      "version": "0.4.3",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/OneTuple-0.4.3/OneTuple-0.4.3.tar.gz",
+      "sourceSha256": "643d1f48e63480ac6d03a8f0ab5976d66527c9b42b1fca81d1bf373d10099c6b",
+      "notices": [
+        {
+          "path": "haskell/OneTuple-0.4.3/LICENSE",
+          "sha256": "32834a07f32ee71f13b28ee19f4c49532630c99bd115267713b8e3b727db0250"
+        }
+      ]
+    },
+    {
+      "package": "QuickCheck",
+      "version": "2.18.0.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/QuickCheck-2.18.0.0/QuickCheck-2.18.0.0.tar.gz",
+      "sourceSha256": "fd8462ad3b1c3bb90465ec581356cf5214673c1015d73f28f2e7a3df179bbc55",
+      "notices": [
+        {
+          "path": "haskell/QuickCheck-2.18.0.0/LICENSE",
+          "sha256": "17035f93180f20bc9c9eb2fd5e0c8836c699b6dedae654b3f2a7a76e737bf2b9"
+        }
+      ]
+    },
+    {
+      "package": "StateVar",
+      "version": "1.2.2",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/StateVar-1.2.2/StateVar-1.2.2.tar.gz",
+      "sourceSha256": "5e4b39da395656a59827b0280508aafdc70335798b50e5d6fd52596026251825",
+      "notices": [
+        {
+          "path": "haskell/StateVar-1.2.2/LICENSE",
+          "sha256": "0e64a0908ba147b6c38f3e905a6d193bf1b0a4cd9af2a1cd8d58a60509e7cfa2"
+        }
+      ]
+    },
+    {
+      "package": "Win32",
+      "version": "2.14.2.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/Win32-2.14.2.1/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "aeson",
+      "version": "2.2.5.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/aeson-2.2.5.0/aeson-2.2.5.0.tar.gz",
+      "sourceSha256": "e22f9883adce9e02d77de6a1bba36f2f98d322c8a9fa3bc51596d31493d00ac5",
+      "notices": [
+        {
+          "path": "haskell/aeson-2.2.5.0/LICENSE",
+          "sha256": "0447823bc7935d43958ae6fe9a779b7f78cac08df3b4f6a89b61b80d3af1cca0"
+        }
+      ]
+    },
+    {
+      "package": "appar",
+      "version": "0.1.8",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/appar-0.1.8/appar-0.1.8.tar.gz",
+      "sourceSha256": "c4ceeddc26525b58d82c41b6d3e32141371a200a6794aae185b6266ccc81631f",
+      "notices": [
+        {
+          "path": "haskell/appar-0.1.8/LICENSE",
+          "sha256": "cb2bd43a3d0c123d0d373fc6808492d477730473d480ab518865aeb797733045"
+        }
+      ]
+    },
+    {
+      "package": "array",
+      "version": "0.5.8.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/array-0.5.8.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "assoc",
+      "version": "1.1.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/assoc-1.1.1/assoc-1.1.1.tar.gz",
+      "sourceSha256": "231149b7fef09f5dd95af51228615e3b296dbd0faadeca053e0644a4b13b0ff6",
+      "notices": [
+        {
+          "path": "haskell/assoc-1.1.1/LICENSE",
+          "sha256": "5f3facf95bb7d0de63aac65ff31e1c071cf37cfa28a56cadf236eac1bd9c9fa3"
+        }
+      ]
+    },
+    {
+      "package": "async",
+      "version": "2.2.6",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/async-2.2.6/async-2.2.6.tar.gz",
+      "sourceSha256": "148571bc188003101241da6c49131d07324e63a88ed283a84def2e9694599619",
+      "notices": [
+        {
+          "path": "haskell/async-2.2.6/LICENSE",
+          "sha256": "27a80f1809158dc95425c19854cf49aa04fa321d430787c768a39de6f55c264e"
+        }
+      ]
+    },
+    {
+      "package": "attoparsec",
+      "version": "0.14.4",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/attoparsec-0.14.4/attoparsec-0.14.4.tar.gz",
+      "sourceSha256": "3f337fe58624565de12426f607c23e60c7b09c86b4e3adfc827ca188c9979e6c",
+      "notices": [
+        {
+          "path": "haskell/attoparsec-0.14.4/LICENSE",
+          "sha256": "b0400f7ccef7de35184d413828dabcd15e6970b11972d11c6100f869f6de1831"
+        }
+      ]
+    },
+    {
+      "package": "auto-update",
+      "version": "0.2.8",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/auto-update-0.2.8/auto-update-0.2.8.tar.gz",
+      "sourceSha256": "cfe1f949514987d2ae3dfcd0c445d8c3bb55e951b3f90da443d0cf2bc337fe7d",
+      "notices": [
+        {
+          "path": "haskell/auto-update-0.2.8/LICENSE",
+          "sha256": "65de0a8e48d57e0cc0613c21eabecfbb18156af328d3cc599322d1f15ea332f5"
+        }
+      ]
+    },
+    {
+      "package": "base",
+      "version": "4.22.0.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/base-4.22.0.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "base-orphans",
+      "version": "0.9.4",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/base-orphans-0.9.4/base-orphans-0.9.4.tar.gz",
+      "sourceSha256": "08cc283a31350f7bd28b2a5d31af693ee337f2593d3e7222999b72dd4954c72b",
+      "notices": [
+        {
+          "path": "haskell/base-orphans-0.9.4/LICENSE",
+          "sha256": "924b65e4acfff34d5b46f3de783d051b591d25932d113d2cf2332bcd2bf9f82a"
+        }
+      ]
+    },
+    {
+      "package": "base16",
+      "version": "1.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/base16-1.0/base16-1.0.tar.gz",
+      "sourceSha256": "86366364910b78609677817cf3f987bf1690e1f75bba04bc91a5ed993d619cde",
+      "notices": [
+        {
+          "path": "haskell/base16-1.0/LICENSE",
+          "sha256": "8ad3f5c1ec2f8e3c930759043f788fee06bfc1b9fc9f629b6456cd59fe5bfe28"
+        }
+      ]
+    },
+    {
+      "package": "base64",
+      "version": "2.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/base64-2.1/base64-2.1.tar.gz",
+      "sourceSha256": "9cf10b04af874d25a15535ca9ae0cb380241ddd3bf42e035f355c50a016bfe9c",
+      "notices": [
+        {
+          "path": "haskell/base64-2.1/LICENSE",
+          "sha256": "9c4709696cb466c79b3c24ac279ee16ab4a910dcc569b166a948425049901e20"
+        }
+      ]
+    },
+    {
+      "package": "base64-bytestring",
+      "version": "1.2.1.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/base64-bytestring-1.2.1.0/base64-bytestring-1.2.1.0.tar.gz",
+      "sourceSha256": "fbf8ed30edde271eb605352021431d8f1b055f95a56af31fe2eacf6bdfdc49c9",
+      "notices": [
+        {
+          "path": "haskell/base64-bytestring-1.2.1.0/LICENSE",
+          "sha256": "16406f8e5ee186592c093f03eaeae85526c14e835a6cb432086520faf4faab27"
+        }
+      ]
+    },
+    {
+      "package": "bifunctors",
+      "version": "5.6.3",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/bifunctors-5.6.3/bifunctors-5.6.3.tar.gz",
+      "sourceSha256": "ad7a357f022f4c780c505040d73f1c06a4fd697b4a0bab6123bbd73b55d8115c",
+      "notices": [
+        {
+          "path": "haskell/bifunctors-5.6.3/LICENSE",
+          "sha256": "bcc90708feb8a742f4702201849b51b6fc99d48308ddccdecc5498d144c3a223"
+        }
+      ]
+    },
+    {
+      "package": "binary",
+      "version": "0.8.9.3",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/binary-0.8.9.3/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "bitvec",
+      "version": "1.1.6.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/bitvec-1.1.6.0/bitvec-1.1.6.0.tar.gz",
+      "sourceSha256": "1a42d33ce341973f4e4f3f0e10d00760056a0aca0e2a57180994bf2ac26c4e2b",
+      "notices": [
+        {
+          "path": "haskell/bitvec-1.1.6.0/LICENSE",
+          "sha256": "5f7cb32fbcb073e1a536b178aea87d0a52e7ce7d6d6d816054a51421e4183cec"
+        }
+      ]
+    },
+    {
+      "package": "bsb-http-chunked",
+      "version": "0.0.0.4",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/bsb-http-chunked-0.0.0.4/bsb-http-chunked-0.0.0.4.tar.gz",
+      "sourceSha256": "148309e23eb8b261c1de374712372d62d8c8dc8ee504c392809c7ec33c0a0e7c",
+      "notices": [
+        {
+          "path": "haskell/bsb-http-chunked-0.0.0.4/LICENSE",
+          "sha256": "bec6f66f6cbb3a5b133710c60c73aee9ac1ba2d5d2bd2405fee3909fe4796346"
+        }
+      ]
+    },
+    {
+      "package": "byteorder",
+      "version": "1.0.4",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/byteorder-1.0.4/byteorder-1.0.4.tar.gz",
+      "sourceSha256": "bd20bbb586947f99c38a4c93d9d0266f49f6fc581767b51ba568f6d5d52d2919",
+      "notices": [
+        {
+          "path": "haskell/byteorder-1.0.4/LICENSE",
+          "sha256": "6d92c13569f0ca969b373aa7535bb99190df460be730b7ce0e58e2f9b727b2e5"
+        }
+      ]
+    },
+    {
+      "package": "bytestring",
+      "version": "0.12.2.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/bytestring-0.12.2.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "case-insensitive",
+      "version": "1.2.1.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/case-insensitive-1.2.1.0/case-insensitive-1.2.1.0.tar.gz",
+      "sourceSha256": "296dc17e0c5f3dfb3d82ced83e4c9c44c338ecde749b278b6eae512f1d04e406",
+      "notices": [
+        {
+          "path": "haskell/case-insensitive-1.2.1.0/LICENSE",
+          "sha256": "0d54a7110b8278011cbd3d7da1e1b7aea5641ad4439f69945ffd84d059a6eb80"
+        }
+      ]
+    },
+    {
+      "package": "character-ps",
+      "version": "0.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/character-ps-0.1/character-ps-0.1.tar.gz",
+      "sourceSha256": "22de71fde38b236d3e9168a832b5e1e75d1fb4f4028667bdf747b3b4c8c1529c",
+      "notices": [
+        {
+          "path": "haskell/character-ps-0.1/LICENSE",
+          "sha256": "acdcccb0242a8497e4d1deaca0692770d55e8cd30298634382f4b6505bb1766b"
+        }
+      ]
+    },
+    {
+      "package": "comonad",
+      "version": "5.0.10",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/comonad-5.0.10/comonad-5.0.10.tar.gz",
+      "sourceSha256": "e9739df2bf5944958062a4ea73bde3bf35c0879cee0944edf7f05bebf993f9c1",
+      "notices": [
+        {
+          "path": "haskell/comonad-5.0.10/LICENSE",
+          "sha256": "1cd5d1f57ac61339dbad8f0a0b2e7dcf977c17e0b93021fbad3650a52c8d4975"
+        }
+      ]
+    },
+    {
+      "package": "conduit",
+      "version": "1.3.6.1",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/conduit-1.3.6.1/conduit-1.3.6.1.tar.gz",
+      "sourceSha256": "69902af03ea7e4cb982fa83da42afe36973b62d0a52ea140ae5362e52854ba3f",
+      "notices": [
+        {
+          "path": "haskell/conduit-1.3.6.1/LICENSE",
+          "sha256": "bebc00cb81ab4a16c3f27768fad205a203d0d7b56944299808dc3c35b53e198d"
+        }
+      ]
+    },
+    {
+      "package": "conduit-extra",
+      "version": "1.3.8",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/conduit-extra-1.3.8/conduit-extra-1.3.8.tar.gz",
+      "sourceSha256": "491f3e8e9408f5d10ff8d02bf4d0edb11821e2537e7c22edbd6d64bf91388222",
+      "notices": [
+        {
+          "path": "haskell/conduit-extra-1.3.8/LICENSE",
+          "sha256": "bebc00cb81ab4a16c3f27768fad205a203d0d7b56944299808dc3c35b53e198d"
+        }
+      ]
+    },
+    {
+      "package": "containers",
+      "version": "0.8",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/containers-0.8/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "contravariant",
+      "version": "1.5.6",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/contravariant-1.5.6/contravariant-1.5.6.tar.gz",
+      "sourceSha256": "65f3260354ee5fd1f2c7ffc54cff99d22b794c254f053734979ad37820e6efe3",
+      "notices": [
+        {
+          "path": "haskell/contravariant-1.5.6/LICENSE",
+          "sha256": "ca552b03f51300af9f01341076808d7df603a1dab4dbbf47e2cae276cb15c770"
+        }
+      ]
+    },
+    {
+      "package": "crypton",
+      "version": "2.2.5",
+      "declaredLicense": "BSD-3-Clause AND MIT AND ISC",
+      "source": "https://hackage.haskell.org/package/crypton-2.2.5/crypton-2.2.5.tar.gz",
+      "sourceSha256": "cf36e650118fa57112f295111c3df516354f89778f4e4880c391e79e97c169a3",
+      "notices": [
+        {
+          "path": "haskell/crypton-2.2.5/LICENSE",
+          "sha256": "8754a5abcb39b3902ea1bd43456447d728499edfc1e25b8b1ad78dd849b38953"
+        },
+        {
+          "path": "haskell/crypton-2.2.5/cbits/LICENSE.go",
+          "sha256": "665be48ca7a4573404a0f9a5fb2d52eba5fa12498f03940cbb38cfbbd46f1632"
+        },
+        {
+          "path": "haskell/crypton-2.2.5/cbits/aes/LICENSE.fusion",
+          "sha256": "f1a619ad346b1184b632349629eac7b74e64697158122b1c952b4dceffbee13e"
+        },
+        {
+          "path": "haskell/crypton-2.2.5/cbits/asm/LICENSE.cryptogams",
+          "sha256": "c2e940a0b67954b8e9284d34adb38ae55ffa38219bc879f0d8dd96cd06318526"
+        },
+        {
+          "path": "haskell/crypton-2.2.5/cbits/bearssl/LICENSE",
+          "sha256": "771bf18c8633ea69ec9b07d2e604c4b99b7bef41b0f5ce6385d24df4448f61ca"
+        },
+        {
+          "path": "haskell/crypton-2.2.5/cbits/mldsa/LICENSE",
+          "sha256": "22f7173776d0a36d3f13ec1f45d51e0502e67d17e384bddf39690d833974ff93"
+        },
+        {
+          "path": "haskell/crypton-2.2.5/cbits/mlkem/LICENSE",
+          "sha256": "1c730e3c2cd4f70e058519ef3e910d8bdd4ed822ae2ce689f3c63d32fc52314b"
+        },
+        {
+          "path": "haskell/crypton-2.2.5/cbits/s2n/LICENSE",
+          "sha256": "41c6380384dc6065456d01405ef0b43e5fe39ba1bccc4ec67801cc66142728e5"
+        }
+      ]
+    },
+    {
+      "package": "crypton-asn1-encoding",
+      "version": "0.10.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/crypton-asn1-encoding-0.10.0/crypton-asn1-encoding-0.10.0.tar.gz",
+      "sourceSha256": "49813a0ee253f628cb8102dd6857905609b52e490c73c554d7cdf0cbce2926d2",
+      "notices": [
+        {
+          "path": "haskell/crypton-asn1-encoding-0.10.0/LICENSE",
+          "sha256": "ef71826759279830b01eb726f702fa0fdc3c787fdf452eaec2e345afbc7cbb0e"
+        }
+      ]
+    },
+    {
+      "package": "crypton-asn1-parse",
+      "version": "0.10.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/crypton-asn1-parse-0.10.0/crypton-asn1-parse-0.10.0.tar.gz",
+      "sourceSha256": "35c0f278d8fcb720b4ad89c2a7f256f7fb098b9f71a0aeb493a4c3c0fe7728d9",
+      "notices": [
+        {
+          "path": "haskell/crypton-asn1-parse-0.10.0/LICENSE",
+          "sha256": "ef71826759279830b01eb726f702fa0fdc3c787fdf452eaec2e345afbc7cbb0e"
+        }
+      ]
+    },
+    {
+      "package": "crypton-asn1-types",
+      "version": "0.4.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/crypton-asn1-types-0.4.1/crypton-asn1-types-0.4.1.tar.gz",
+      "sourceSha256": "61efc63877a0d3ddb992a793839d9427c1597e095a6e1f63c04e05fd3e4e302d",
+      "notices": [
+        {
+          "path": "haskell/crypton-asn1-types-0.4.1/LICENSE",
+          "sha256": "ef71826759279830b01eb726f702fa0fdc3c787fdf452eaec2e345afbc7cbb0e"
+        }
+      ]
+    },
+    {
+      "package": "crypton-pem",
+      "version": "0.3.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/crypton-pem-0.3.0/crypton-pem-0.3.0.tar.gz",
+      "sourceSha256": "1fadab8cba74c6acd74873f06415b4a2a7c84b16b43425217a7beb0ec5830540",
+      "notices": [
+        {
+          "path": "haskell/crypton-pem-0.3.0/LICENSE",
+          "sha256": "9c541692934041d86bb01350fb225958b8a9ba450b108293c3c0c7b00b19c2f0"
+        }
+      ]
+    },
+    {
+      "package": "crypton-x509",
+      "version": "1.10.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/crypton-x509-1.10.0/crypton-x509-1.10.0.tar.gz",
+      "sourceSha256": "b0051febe1d70d0ede77cee0b7c5fac074e0c2941acbad316926f2e6206db2fa",
+      "notices": [
+        {
+          "path": "haskell/crypton-x509-1.10.0/LICENSE",
+          "sha256": "43d820ad7c467c6c9cd6eedb385cfe89d1545a48eca4d40bfe3b7bcd80c298cb"
+        }
+      ]
+    },
+    {
+      "package": "data-fix",
+      "version": "0.3.4",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/data-fix-0.3.4/data-fix-0.3.4.tar.gz",
+      "sourceSha256": "8df052d18c047ab9e9200536a8799b5af3997ebecbbb091a7384b6be8416ab37",
+      "notices": [
+        {
+          "path": "haskell/data-fix-0.3.4/LICENSE",
+          "sha256": "a79799c00ff9b9e0edec255f12f2b27f459db1f166a584f6779efcb957ec2ddf"
+        }
+      ]
+    },
+    {
+      "package": "deepseq",
+      "version": "1.5.1.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/deepseq-1.5.1.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "directory",
+      "version": "1.3.10.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/directory-1.3.10.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "distributive",
+      "version": "0.6.3",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/distributive-0.6.3/distributive-0.6.3.tar.gz",
+      "sourceSha256": "aeeb028a23db9f9b073e24a6bd766b79b9d58c2b407b06bf33296c27e9264baa",
+      "notices": [
+        {
+          "path": "haskell/distributive-0.6.3/LICENSE",
+          "sha256": "7d94212fab30a5dd88ff193657043cf9c3df8353380ad4c7de6bc10b45d6fed8"
+        }
+      ]
+    },
+    {
+      "package": "dlist",
+      "version": "1.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/dlist-1.0/dlist-1.0.tar.gz",
+      "sourceSha256": "173d637328bb173fcc365f30d29ff4a94292a1e0e5558aeb3dfc11de81510115",
+      "notices": [
+        {
+          "path": "haskell/dlist-1.0/license.md",
+          "sha256": "9b659a8f7227402615c243adf2db24b97d1cbaa6b29f79ea4991289b0b37c7be"
+        }
+      ]
+    },
+    {
+      "package": "exceptions",
+      "version": "0.10.11",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/exceptions-0.10.11/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "file-io",
+      "version": "0.1.5",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/file-io-0.1.5/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "filepath",
+      "version": "1.5.4.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/filepath-1.5.4.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "ghc-bignum",
+      "version": "1.4",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/ghc-bignum-1.4/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "ghc-boot-th",
+      "version": "9.14.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/ghc-boot-th-9.14.1/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "ghc-internal",
+      "version": "9.1401.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/ghc-internal-9.1401.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "ghc-prim",
+      "version": "0.13.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/ghc-prim-0.13.1/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "hashable",
+      "version": "1.5.1.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/hashable-1.5.1.0/hashable-1.5.1.0.tar.gz",
+      "sourceSha256": "ed0b7c10ce92c9ffe45420dadc38c6d39db486ff3633ff13567cc9f75f79b112",
+      "notices": [
+        {
+          "path": "haskell/hashable-1.5.1.0/LICENSE",
+          "sha256": "3112022b0b06d7f529bc5bf8cc767973191d3d6502693c9e4ad9c79de9318db0"
+        }
+      ]
+    },
+    {
+      "package": "http-date",
+      "version": "0.0.11",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/http-date-0.0.11/http-date-0.0.11.tar.gz",
+      "sourceSha256": "32f923ac1ad9bdfeadce7c52a03c9ba6225ba60dc14137cb1cdf32ea84ccf4d3",
+      "notices": [
+        {
+          "path": "haskell/http-date-0.0.11/LICENSE",
+          "sha256": "cb2bd43a3d0c123d0d373fc6808492d477730473d480ab518865aeb797733045"
+        }
+      ]
+    },
+    {
+      "package": "http-semantics",
+      "version": "0.4.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/http-semantics-0.4.1/http-semantics-0.4.1.tar.gz",
+      "sourceSha256": "a02df11df8d5eabad028ce4c2d1efa889ae68e556dba94b0d13a7501797453db",
+      "notices": [
+        {
+          "path": "haskell/http-semantics-0.4.1/LICENSE",
+          "sha256": "b13a2f0ed5d2edefe1befd8296b941abfab106d63b5df262c9d14e72f785dd8e"
+        }
+      ]
+    },
+    {
+      "package": "http-types",
+      "version": "0.12.6",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/http-types-0.12.6/http-types-0.12.6.tar.gz",
+      "sourceSha256": "b688042acb4e53f1f5efed26056cf1fdc3ae5dc6b85cfbe321edffc3079c106c",
+      "notices": [
+        {
+          "path": "haskell/http-types-0.12.6/LICENSE",
+          "sha256": "18fdcbbfc576fa4da1473406dfb266c33183c6a3858bc8886283493130b25455"
+        }
+      ]
+    },
+    {
+      "package": "http2",
+      "version": "5.4.9",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/http2-5.4.9/http2-5.4.9.tar.gz",
+      "sourceSha256": "8d108dbcbb60df0718e2d6d6c7fedc8ba035f580d373f560caa5dbf3c3c77fef",
+      "notices": [
+        {
+          "path": "haskell/http2-5.4.9/LICENSE",
+          "sha256": "ba1850df60eee7d108835ab7c669b67be159fb47e104321e79c35ca74d5184f5"
+        }
+      ]
+    },
+    {
+      "package": "indexed-traversable",
+      "version": "0.1.5",
+      "declaredLicense": "BSD2",
+      "source": "https://hackage.haskell.org/package/indexed-traversable-0.1.5/indexed-traversable-0.1.5.tar.gz",
+      "sourceSha256": "6423597d3528ac66c54beaab9f5408429c0a29b8cb98c45a1645f255aef7fef0",
+      "notices": [
+        {
+          "path": "haskell/indexed-traversable-0.1.5/LICENSE",
+          "sha256": "c40d7afbc07af51f50301617e1f9dd122a3517caab8564ad3baa4d2c85491796"
+        }
+      ]
+    },
+    {
+      "package": "indexed-traversable-instances",
+      "version": "0.1.2.1",
+      "declaredLicense": "BSD2",
+      "source": "https://hackage.haskell.org/package/indexed-traversable-instances-0.1.2.1/indexed-traversable-instances-0.1.2.1.tar.gz",
+      "sourceSha256": "e69d41f23a95463c2e03aee03374a4f489c72f7bf235be251499c4cca9411fec",
+      "notices": [
+        {
+          "path": "haskell/indexed-traversable-instances-0.1.2.1/LICENSE",
+          "sha256": "c40d7afbc07af51f50301617e1f9dd122a3517caab8564ad3baa4d2c85491796"
+        }
+      ]
+    },
+    {
+      "package": "integer-conversion",
+      "version": "0.1.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/integer-conversion-0.1.1/integer-conversion-0.1.1.tar.gz",
+      "sourceSha256": "c18164a048073310f6353ebc64c9037b52a4b8299963ce05e027bcf60e22155a",
+      "notices": [
+        {
+          "path": "haskell/integer-conversion-0.1.1/LICENSE",
+          "sha256": "acdcccb0242a8497e4d1deaca0692770d55e8cd30298634382f4b6505bb1766b"
+        }
+      ]
+    },
+    {
+      "package": "integer-gmp",
+      "version": "1.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/integer-gmp-1.1/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "integer-logarithms",
+      "version": "1.0.5",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/integer-logarithms-1.0.5/integer-logarithms-1.0.5.tar.gz",
+      "sourceSha256": "66dff6f1f778fe1ec689139fe125cd4e6a95643734c651c891eafa2c50669459",
+      "notices": [
+        {
+          "path": "haskell/integer-logarithms-1.0.5/LICENSE",
+          "sha256": "ce24460cb902fe28fef98b8d3ce0cc4105d9d8204dccc819a8233452de3b38b7"
+        }
+      ]
+    },
+    {
+      "package": "iproute",
+      "version": "1.7.15",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/iproute-1.7.15/iproute-1.7.15.tar.gz",
+      "sourceSha256": "18a331a7e0e6f9dc89a2da95577b0d76bd2690b8f832b72b46d6cc9b667b4ba5",
+      "notices": [
+        {
+          "path": "haskell/iproute-1.7.15/LICENSE",
+          "sha256": "cb2bd43a3d0c123d0d373fc6808492d477730473d480ab518865aeb797733045"
+        }
+      ]
+    },
+    {
+      "package": "mono-traversable",
+      "version": "1.0.21.0",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/mono-traversable-1.0.21.0/mono-traversable-1.0.21.0.tar.gz",
+      "sourceSha256": "4dd93ea334c0169500402f07aa39c98dbb7bffe55dc63fdf228da2cc22c7c5cd",
+      "notices": [
+        {
+          "path": "haskell/mono-traversable-1.0.21.0/LICENSE",
+          "sha256": "49993c21a514d0ea769e899737fa3b1df2d76b7e23846fcc46db6f5e6d07d14b"
+        }
+      ]
+    },
+    {
+      "package": "mtl",
+      "version": "2.3.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/mtl-2.3.1/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "network",
+      "version": "3.2.9.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/network-3.2.9.0/network-3.2.9.0.tar.gz",
+      "sourceSha256": "a3e1d8bdd58c67fe4bf21f2feb41b5041b8926f3d5779f80614944b7c3075bb5",
+      "notices": [
+        {
+          "path": "haskell/network-3.2.9.0/LICENSE",
+          "sha256": "52b7b34c66e567678e498103d010a1bd163ef8b06e7e044016b04286a08db982"
+        }
+      ]
+    },
+    {
+      "package": "network-byte-order",
+      "version": "0.1.8",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/network-byte-order-0.1.8/network-byte-order-0.1.8.tar.gz",
+      "sourceSha256": "529766816e9e3fdb82fe1b147f8499ef482c30d15330d72088d8216ef640e741",
+      "notices": [
+        {
+          "path": "haskell/network-byte-order-0.1.8/LICENSE",
+          "sha256": "f0ff7b454d293caf38d5d7354697affd230c36308fe343ebb33d43b48fad02b9"
+        }
+      ]
+    },
+    {
+      "package": "network-control",
+      "version": "0.1.7",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/network-control-0.1.7/network-control-0.1.7.tar.gz",
+      "sourceSha256": "05d40d381e5c72beefb209b7e82877b457fbca2880e60ed849bad480b6795b10",
+      "notices": [
+        {
+          "path": "haskell/network-control-0.1.7/LICENSE",
+          "sha256": "2a247ae4bf4cf5465f8847a39abf7f642e306148fbf7aa0a3eda468d4b7f7c56"
+        }
+      ]
+    },
+    {
+      "package": "network-uri",
+      "version": "2.6.4.2",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/network-uri-2.6.4.2/network-uri-2.6.4.2.tar.gz",
+      "sourceSha256": "9c188973126e893250b881f20e8811dca06c223c23402b06f7a1f2e995797228",
+      "notices": [
+        {
+          "path": "haskell/network-uri-2.6.4.2/LICENSE",
+          "sha256": "52b7b34c66e567678e498103d010a1bd163ef8b06e7e044016b04286a08db982"
+        }
+      ]
+    },
+    {
+      "package": "os-string",
+      "version": "2.0.8",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/os-string-2.0.8/os-string-2.0.8.tar.gz",
+      "sourceSha256": "02794279dd30282e7b0d45a860dda50ee26a92b1461f5da4545f62dab4172686",
+      "notices": [
+        {
+          "path": "haskell/os-string-2.0.8/LICENSE",
+          "sha256": "ab5d673bec862e824a264b00113a4ba4fe3edfd303fa7175da85d4e1c7e595cd"
+        }
+      ]
+    },
+    {
+      "package": "parsec",
+      "version": "3.1.18.0",
+      "declaredLicense": "BSD-2-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/parsec-3.1.18.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "pretty",
+      "version": "1.1.3.6",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/pretty-1.1.3.6/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "primitive",
+      "version": "0.9.1.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/primitive-0.9.1.0/primitive-0.9.1.0.tar.gz",
+      "sourceSha256": "44b4de41813c7bc5db8a57f87c3612a069b65086946268ba165097252ebd3d76",
+      "notices": [
+        {
+          "path": "haskell/primitive-0.9.1.0/LICENSE",
+          "sha256": "cd6b51ecce7bc97a7bbd8500797c350a72f2f9c8e3aaf9d7154b9064d16316ea"
+        },
+        {
+          "path": "haskell/primitive-0.9.1.0/test/LICENSE",
+          "sha256": "cd6b51ecce7bc97a7bbd8500797c350a72f2f9c8e3aaf9d7154b9064d16316ea"
+        }
+      ]
+    },
+    {
+      "package": "process",
+      "version": "1.6.26.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/process-1.6.26.1/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "psqueues",
+      "version": "0.2.8.3",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/psqueues-0.2.8.3/psqueues-0.2.8.3.tar.gz",
+      "sourceSha256": "10bcbe9aeb3ca00d72e86d940cf91b021b83f908885375120d4d51d0240ad076",
+      "notices": [
+        {
+          "path": "haskell/psqueues-0.2.8.3/LICENSE",
+          "sha256": "7904b49880da042ab0e3125ef4da8ba2322b7b5e13de13bc6a322e5e2670bc5c"
+        }
+      ]
+    },
+    {
+      "package": "ram",
+      "version": "0.22.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/ram-0.22.1/ram-0.22.1.tar.gz",
+      "sourceSha256": "72474962349dd101b970cc46bcc06c799f7311d228e7b59f1a44f81427159f70",
+      "notices": [
+        {
+          "path": "haskell/ram-0.22.1/LICENSE",
+          "sha256": "3c884b61cafcadb60def61d439681ddb17d5f492d82d3ba9f870faf403814da8"
+        }
+      ]
+    },
+    {
+      "package": "random",
+      "version": "1.3.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/random-1.3.1/random-1.3.1.tar.gz",
+      "sourceSha256": "d840ac83f265b0cfa2a678f8ec78627eb50cf9be2f067c52c8a4239c29b71a35",
+      "notices": [
+        {
+          "path": "haskell/random-1.3.1/LICENSE",
+          "sha256": "e06262d9e31494d84bb3a2f3ef5805502deb7568cea6e677a81a28b69153f557"
+        }
+      ]
+    },
+    {
+      "package": "recv",
+      "version": "0.1.2",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/recv-0.1.2/recv-0.1.2.tar.gz",
+      "sourceSha256": "4a1d9923646619911d7f5e162ef01be88de981c122e31e4d733df56f319e9aa5",
+      "notices": [
+        {
+          "path": "haskell/recv-0.1.2/LICENSE",
+          "sha256": "1d663523fed456dbf9c832eeff7f7100ed863444d7c8d40cddf63f7fd6782b28"
+        }
+      ]
+    },
+    {
+      "package": "resourcet",
+      "version": "1.3.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/resourcet-1.3.0/resourcet-1.3.0.tar.gz",
+      "sourceSha256": "ec601785ee42a201f32adb205b8685c983f18757b1bd33d2e806d571e0f9996b",
+      "notices": [
+        {
+          "path": "haskell/resourcet-1.3.0/LICENSE",
+          "sha256": "0b154140d607038387f735e6f519365f2c13d6c1bd4ad5ab43e2b7c0f142e093"
+        }
+      ]
+    },
+    {
+      "package": "rts",
+      "version": "1.0.3",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/rts-1.0.3/GHC-LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "scientific",
+      "version": "0.3.10.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/scientific-0.3.10.0/scientific-0.3.10.0.tar.gz",
+      "sourceSha256": "1d096837ba690ca3712f243472bc9fbb17574f8f29f4caf391a83739401c9016",
+      "notices": [
+        {
+          "path": "haskell/scientific-0.3.10.0/LICENSE",
+          "sha256": "4809f8a687a81a714ca99fc2a9a366d3fa5dec4adc284a5e026c909da924ba53"
+        }
+      ]
+    },
+    {
+      "package": "semialign",
+      "version": "1.4",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/semialign-1.4/semialign-1.4.tar.gz",
+      "sourceSha256": "0f51389e57af646042dcec2511960617bee2857231ac291228cf4ef6621a9464",
+      "notices": [
+        {
+          "path": "haskell/semialign-1.4/LICENSE",
+          "sha256": "ac2ed60fbb868f568b86a26cfe93b608359decaf125f506bd5fdf04975fb35f8"
+        }
+      ]
+    },
+    {
+      "package": "semigroupoids",
+      "version": "6.0.2",
+      "declaredLicense": "BSD2",
+      "source": "https://hackage.haskell.org/package/semigroupoids-6.0.2/semigroupoids-6.0.2.tar.gz",
+      "sourceSha256": "e48258e49542245ef6c58d7f419a83d1d1ab91b013d92c3b5c8c7c048daaa12e",
+      "notices": [
+        {
+          "path": "haskell/semigroupoids-6.0.2/LICENSE",
+          "sha256": "c9ed0c32e5332899f31bfad68cdb6e949a712a155318a0eb4872cc8f5bf4c95b"
+        }
+      ]
+    },
+    {
+      "package": "simple-sendfile",
+      "version": "0.2.32",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/simple-sendfile-0.2.32/simple-sendfile-0.2.32.tar.gz",
+      "sourceSha256": "9f28d0a67ac3d956d2dd78eb19ea922c0a9192bbbeeeead20d39f561636828a3",
+      "notices": [
+        {
+          "path": "haskell/simple-sendfile-0.2.32/LICENSE",
+          "sha256": "cb2bd43a3d0c123d0d373fc6808492d477730473d480ab518865aeb797733045"
+        }
+      ]
+    },
+    {
+      "package": "split",
+      "version": "0.2.5.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/split-0.2.5.1/split-0.2.5.1.tar.gz",
+      "sourceSha256": "18adb60f7f12d08601c382d47c2bacbbd4de4b9233f09683889d15b64b6420d6",
+      "notices": [
+        {
+          "path": "haskell/split-0.2.5.1/LICENSE",
+          "sha256": "9a7e7299feb31a257fc0cd08c49dfea35ec186c9bb59b0a3ff67c63fc29a8a58"
+        }
+      ]
+    },
+    {
+      "package": "splitmix",
+      "version": "0.1.3.2",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/splitmix-0.1.3.2/splitmix-0.1.3.2.tar.gz",
+      "sourceSha256": "a61d4e8b30f5a16526d7d31171b674ae7924d2207f378060d13363bd8794de8c",
+      "notices": [
+        {
+          "path": "haskell/splitmix-0.1.3.2/LICENSE",
+          "sha256": "5f3facf95bb7d0de63aac65ff31e1c071cf37cfa28a56cadf236eac1bd9c9fa3"
+        }
+      ]
+    },
+    {
+      "package": "stm",
+      "version": "2.5.3.1",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/stm-2.5.3.1/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "streaming-commons",
+      "version": "0.2.3.1",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/streaming-commons-0.2.3.1/streaming-commons-0.2.3.1.tar.gz",
+      "sourceSha256": "33d16c0c6080795800d9f0e490203ea3e50bd5034e5d077a0ddc04d33ea4dc6e",
+      "notices": [
+        {
+          "path": "haskell/streaming-commons-0.2.3.1/LICENSE",
+          "sha256": "4b11a4597745ba028689093b5121e9e87b022169534c5d5e7317a5911d56e336"
+        },
+        {
+          "path": "haskell/streaming-commons-0.2.3.1/test/LICENSE.gz",
+          "sha256": "50ee405b2011db4f7f396f324ce2970bc5f25d54106f7bc114a1b7d4a092a86f"
+        }
+      ]
+    },
+    {
+      "package": "strict",
+      "version": "0.5.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/strict-0.5.1/strict-0.5.1.tar.gz",
+      "sourceSha256": "77719280c2a86312e748227bfa732eeaae0e7df48d57acc3c2e5b7b07afe2f8b",
+      "notices": [
+        {
+          "path": "haskell/strict-0.5.1/LICENSE",
+          "sha256": "79c71a6ece44448f34b5395c358367e1c94c2c3924cbf690f251551bd392a185"
+        }
+      ]
+    },
+    {
+      "package": "tagged",
+      "version": "0.8.11",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/tagged-0.8.11/tagged-0.8.11.tar.gz",
+      "sourceSha256": "b288cf67bce7df2b21717fc254c05dea8eb814fec41059d263ba5d822cd8c75e",
+      "notices": [
+        {
+          "path": "haskell/tagged-0.8.11/LICENSE",
+          "sha256": "3b9fcb04037a8eb1389717d322ed727c60080a9dab2cb6f76882f45f56e6cb12"
+        }
+      ]
+    },
+    {
+      "package": "template-haskell",
+      "version": "2.24.0.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/template-haskell-2.24.0.0/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "temporary",
+      "version": "1.3",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/temporary-1.3/temporary-1.3.tar.gz",
+      "sourceSha256": "8c442993694b5ffca823ce864af95bd2841fb5264ee511c61cf48cc71d879890",
+      "notices": [
+        {
+          "path": "haskell/temporary-1.3/LICENSE",
+          "sha256": "a219a531e2ab495cb53f30041f688d52c114bb566c1b245856c9dcb4e72fe7d2"
+        }
+      ]
+    },
+    {
+      "package": "text",
+      "version": "2.1.3",
+      "declaredLicense": "BSD-2-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/text-2.1.3/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "text-iso8601",
+      "version": "0.1.1.2",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/text-iso8601-0.1.1.2/text-iso8601-0.1.1.2.tar.gz",
+      "sourceSha256": "ddbb13aec70a2fd54c7a25bf85e38a467d0d5599980d21f4925b3c706f8f7398",
+      "notices": [
+        {
+          "path": "haskell/text-iso8601-0.1.1.2/LICENSE",
+          "sha256": "e885635ca8d75bf5e3988aa4cb77d13793133ab2b4f6c6416a4d8d4fec6a6aa3"
+        }
+      ]
+    },
+    {
+      "package": "text-short",
+      "version": "0.1.6.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/text-short-0.1.6.1/text-short-0.1.6.1.tar.gz",
+      "sourceSha256": "83669f402354274fbcdc75126443af733267b955e451f72c0c6d86ae8da87416",
+      "notices": [
+        {
+          "path": "haskell/text-short-0.1.6.1/LICENSE",
+          "sha256": "11a5b1f0c369358d5b4d0baee31232033b8b0dc3ec034f2dcc9ad393d1dc75a4"
+        }
+      ]
+    },
+    {
+      "package": "th-abstraction",
+      "version": "0.7.2.0",
+      "declaredLicense": "ISC",
+      "source": "https://hackage.haskell.org/package/th-abstraction-0.7.2.0/th-abstraction-0.7.2.0.tar.gz",
+      "sourceSha256": "946654bcd8ea2dff7d0058061861a8c898be9addf20c92d3cfa53b679e737622",
+      "notices": [
+        {
+          "path": "haskell/th-abstraction-0.7.2.0/LICENSE",
+          "sha256": "499e8e5638d8d217fc7b8e0aa4dfcc1852495fe3d1f8ac9e8dd707a8ee213009"
+        }
+      ]
+    },
+    {
+      "package": "th-compat",
+      "version": "0.1.7",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/th-compat-0.1.7/th-compat-0.1.7.tar.gz",
+      "sourceSha256": "9e26f12230d38ae56dcf94f8c139799dc3b7376f3434d35ce74847a0a24fd5ff",
+      "notices": [
+        {
+          "path": "haskell/th-compat-0.1.7/LICENSE",
+          "sha256": "24132d6adf696164c3cc6e3fdbec6f095934aaff90bca1d330ef01eff7ade6f4"
+        }
+      ]
+    },
+    {
+      "package": "these",
+      "version": "1.2.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/these-1.2.1/these-1.2.1.tar.gz",
+      "sourceSha256": "17d6d933365edabf801a16842c1403bdd37cc5300faa2fcca980decdab22e4de",
+      "notices": [
+        {
+          "path": "haskell/these-1.2.1/LICENSE",
+          "sha256": "ac2ed60fbb868f568b86a26cfe93b608359decaf125f506bd5fdf04975fb35f8"
+        }
+      ]
+    },
+    {
+      "package": "time",
+      "version": "1.15",
+      "declaredLicense": "BSD-2-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/time-1.15/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "time-compat",
+      "version": "1.9.9",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/time-compat-1.9.9/time-compat-1.9.9.tar.gz",
+      "sourceSha256": "90fadded53cf9c15855eebf809e9536af8f85d00e32b82f7c8b506d2fadf7c25",
+      "notices": [
+        {
+          "path": "haskell/time-compat-1.9.9/LICENSE",
+          "sha256": "1bfcfa37bada908246a9908f61535a116f53283bdbb3550504c46c28da402e5c"
+        }
+      ]
+    },
+    {
+      "package": "time-hourglass",
+      "version": "0.3.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/time-hourglass-0.3.0/time-hourglass-0.3.0.tar.gz",
+      "sourceSha256": "9c7c7c74dda5033160328606cb3e8724201abadf9a140271c73c89a2612b9d22",
+      "notices": [
+        {
+          "path": "haskell/time-hourglass-0.3.0/LICENSE",
+          "sha256": "50abbf454b50e9cd41241c6d8b272e1a598e11c1ed34dbf839f93b0736c6dfd4"
+        }
+      ]
+    },
+    {
+      "package": "time-manager",
+      "version": "0.4.1",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/time-manager-0.4.1/time-manager-0.4.1.tar.gz",
+      "sourceSha256": "19e103e0059315ca048768ae5724ac53c80f589a0d142dab00506794cf1b412b",
+      "notices": [
+        {
+          "path": "haskell/time-manager-0.4.1/LICENSE",
+          "sha256": "bebc00cb81ab4a16c3f27768fad205a203d0d7b56944299808dc3c35b53e198d"
+        }
+      ]
+    },
+    {
+      "package": "transformers",
+      "version": "0.6.1.2",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://downloads.haskell.org/ghc/9.14.1/ghc-9.14.1-src.tar.xz",
+      "sourceSha256": null,
+      "notices": [
+        {
+          "path": "haskell/transformers-0.6.1.2/LICENSE",
+          "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+        }
+      ]
+    },
+    {
+      "package": "transformers-compat",
+      "version": "0.8",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/transformers-compat-0.8/transformers-compat-0.8.tar.gz",
+      "sourceSha256": "f05c2145ee8d77ed773908d27a77c7f8be4d9419af90a757076b799c4a194da8",
+      "notices": [
+        {
+          "path": "haskell/transformers-compat-0.8/LICENSE",
+          "sha256": "bbb4823c79bfc2d482513e9f7020d63bf490b91639cc5812a8500c5cbe167618"
+        },
+        {
+          "path": "haskell/transformers-compat-0.8/tests/LICENSE",
+          "sha256": "bbb4823c79bfc2d482513e9f7020d63bf490b91639cc5812a8500c5cbe167618"
+        }
+      ]
+    },
+    {
+      "package": "typed-process",
+      "version": "0.2.13.0",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/typed-process-0.2.13.0/typed-process-0.2.13.0.tar.gz",
+      "sourceSha256": "9400966013b541df2e54ac8d57c3a670fc28bde2be87767ce98f13bbe2aa43a0",
+      "notices": [
+        {
+          "path": "haskell/typed-process-0.2.13.0/LICENSE",
+          "sha256": "474de2827f06a0123585d55def9e113d94059376cf367eff01a0021e9fa531a7"
+        }
+      ]
+    },
+    {
+      "package": "unix-compat",
+      "version": "0.7.4.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/unix-compat-0.7.4.1/unix-compat-0.7.4.1.tar.gz",
+      "sourceSha256": "3f9611624a100c75e672d900e63fe7a0e595615a34e6605662edaff151e44054",
+      "notices": [
+        {
+          "path": "haskell/unix-compat-0.7.4.1/LICENSE",
+          "sha256": "3e715c949187f0c6ef1c8d94a8f8af00280441cbf19dec52711153d6e7ef141d"
+        }
+      ]
+    },
+    {
+      "package": "unix-time",
+      "version": "0.5.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/unix-time-0.5.0/unix-time-0.5.0.tar.gz",
+      "sourceSha256": "1563609b662309f8939fc9c61a672c5566ae53386999e50f9d85e705138fa85f",
+      "notices": [
+        {
+          "path": "haskell/unix-time-0.5.0/LICENSE",
+          "sha256": "cb2bd43a3d0c123d0d373fc6808492d477730473d480ab518865aeb797733045"
+        }
+      ]
+    },
+    {
+      "package": "unliftio-core",
+      "version": "0.2.1.0",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/unliftio-core-0.2.1.0/unliftio-core-0.2.1.0.tar.gz",
+      "sourceSha256": "99384cba8d56d9d61b85e38a313a93ebcdb78be6566367f0930ef580597fe3e3",
+      "notices": [
+        {
+          "path": "haskell/unliftio-core-0.2.1.0/LICENSE",
+          "sha256": "c125e5ab10ec8805d3e3b648ac3f522a61a8a55306de0b130d322863fa7a7327"
+        }
+      ]
+    },
+    {
+      "package": "unordered-containers",
+      "version": "0.2.21",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/unordered-containers-0.2.21/unordered-containers-0.2.21.tar.gz",
+      "sourceSha256": "3b2ad1522b546e61960153257d1e5d239eeec5e83da847d5cb4d896a5bb7f9c0",
+      "notices": [
+        {
+          "path": "haskell/unordered-containers-0.2.21/LICENSE",
+          "sha256": "f48ff1f157f254305a224bbb92978b44d562cd735504008575f53201e6ae410b"
+        }
+      ]
+    },
+    {
+      "package": "utf8-string",
+      "version": "1.0.2",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/utf8-string-1.0.2/utf8-string-1.0.2.tar.gz",
+      "sourceSha256": "ee48deada7600370728c4156cb002441de770d0121ae33a68139a9ed9c19b09a",
+      "notices": [
+        {
+          "path": "haskell/utf8-string-1.0.2/LICENSE",
+          "sha256": "1cf91ce7994c6a05fe507f4617d6427e0703e156052e1769c4350b87aa3b63f0"
+        }
+      ]
+    },
+    {
+      "package": "uuid-types",
+      "version": "1.0.6.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/uuid-types-1.0.6.1/uuid-types-1.0.6.1.tar.gz",
+      "sourceSha256": "9f00f278b9711104b6acc1404d9f0d45c1183b4987cf9c07403bebc05c0c3024",
+      "notices": [
+        {
+          "path": "haskell/uuid-types-1.0.6.1/LICENSE",
+          "sha256": "9fd9cbfc86dd7e1831281a4ba4edf63a03a1f7adf59fc9fdc243b8600f08164d"
+        }
+      ]
+    },
+    {
+      "package": "vault",
+      "version": "0.3.2.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/vault-0.3.2.0/vault-0.3.2.0.tar.gz",
+      "sourceSha256": "8ee4c8e71feb26841e667ee23e41d7a380f64c14703da93b3a4ea9164da79023",
+      "notices": [
+        {
+          "path": "haskell/vault-0.3.2.0/LICENSE",
+          "sha256": "c846a184f2132df78c1caac895b8fe16936d38f2607a5ae161048b07e29ade4c"
+        }
+      ]
+    },
+    {
+      "package": "vector",
+      "version": "0.13.2.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/vector-0.13.2.0/vector-0.13.2.0.tar.gz",
+      "sourceSha256": "28f203c786cbf8ac6dc3fea3378ec36f34173d505fb4a1dd60fc8418ad91c423",
+      "notices": [
+        {
+          "path": "haskell/vector-0.13.2.0/LICENSE",
+          "sha256": "a2bb7af96394e2cf79f5ceb0b7c85b088219814339fd0edb61d4fafb6dfd1c71"
+        },
+        {
+          "path": "haskell/vector-0.13.2.0/tests/LICENSE",
+          "sha256": "c9a857cf93831c86d7de8775a19ea24cad13a584c27a8ca9098e3277065393a8"
+        }
+      ]
+    },
+    {
+      "package": "vector-algorithms",
+      "version": "0.9.1.0",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/vector-algorithms-0.9.1.0/vector-algorithms-0.9.1.0.tar.gz",
+      "sourceSha256": "d2b674676802670d8a682b357da6b6b5741b4a33b191f0ffe5f2b2bc40558eb2",
+      "notices": [
+        {
+          "path": "haskell/vector-algorithms-0.9.1.0/LICENSE",
+          "sha256": "c188f9ee5859b8d2f7d7e3c9ec729953d7297ee5c09e7491cac1f5a44cf7e4df"
+        }
+      ]
+    },
+    {
+      "package": "vector-stream",
+      "version": "0.1.0.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/vector-stream-0.1.0.1/vector-stream-0.1.0.1.tar.gz",
+      "sourceSha256": "d0f507334bdea5431a2f07f525a97f29e76522c32210f5de6d5a2b4f1d42bf7c",
+      "notices": [
+        {
+          "path": "haskell/vector-stream-0.1.0.1/LICENSE",
+          "sha256": "a2bb7af96394e2cf79f5ceb0b7c85b088219814339fd0edb61d4fafb6dfd1c71"
+        }
+      ]
+    },
+    {
+      "package": "wai",
+      "version": "3.2.5",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/wai-3.2.5/wai-3.2.5.tar.gz",
+      "sourceSha256": "7add19f5371a1850f8d785db2401edb144dfb2755a7b1ac4d2337ebc771ed46a",
+      "notices": [
+        {
+          "path": "haskell/wai-3.2.5/LICENSE",
+          "sha256": "bebc00cb81ab4a16c3f27768fad205a203d0d7b56944299808dc3c35b53e198d"
+        }
+      ]
+    },
+    {
+      "package": "warp",
+      "version": "3.4.16",
+      "declaredLicense": "MIT",
+      "source": "https://hackage.haskell.org/package/warp-3.4.16/warp-3.4.16.tar.gz",
+      "sourceSha256": "7dd09b9f2f868e4647fe96162f063a99da791a0e57479d1ea74b210ecb8b2f17",
+      "notices": [
+        {
+          "path": "haskell/warp-3.4.16/LICENSE",
+          "sha256": "bebc00cb81ab4a16c3f27768fad205a203d0d7b56944299808dc3c35b53e198d"
+        }
+      ]
+    },
+    {
+      "package": "witherable",
+      "version": "0.5",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://hackage.haskell.org/package/witherable-0.5/witherable-0.5.tar.gz",
+      "sourceSha256": "48434cc1e465b13cbc0133a90c3ec0d827c93b77ce95807fe0a38b65f4918cd1",
+      "notices": [
+        {
+          "path": "haskell/witherable-0.5/LICENSE",
+          "sha256": "acdbcfe3ef2b455b38bcec8fa9184a9fefb950cf9d6c6b10e092d72581345b16"
+        }
+      ]
+    },
+    {
+      "package": "word8",
+      "version": "0.1.3",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/word8-0.1.3/word8-0.1.3.tar.gz",
+      "sourceSha256": "2630934c75728bfbf390c1f0206b225507b354f68d4047b06c018a36823b5d8a",
+      "notices": [
+        {
+          "path": "haskell/word8-0.1.3/LICENSE",
+          "sha256": "8a6ad5812fa8d7760c3ccfa322d5008bf7c87c628c3dea8479494956d83a7698"
+        }
+      ]
+    },
+    {
+      "package": "zlib",
+      "version": "0.7.1.1",
+      "declaredLicense": "BSD3",
+      "source": "https://hackage.haskell.org/package/zlib-0.7.1.1/zlib-0.7.1.1.tar.gz",
+      "sourceSha256": "bf95ab01ed924be800addea195fba5ca97ec69f378368f6ff466bdc29666c1c1",
+      "notices": [
+        {
+          "path": "haskell/zlib-0.7.1.1/LICENSE",
+          "sha256": "120037d064ebb78667967287d30f39502f35b8f3114044727943de0b326bd8e5"
+        }
+      ]
+    },
+    {
+      "package": "zlib-clib",
+      "version": "1.3.2",
+      "declaredLicense": "Zlib",
+      "source": "https://hackage.haskell.org/package/zlib-clib-1.3.2/zlib-clib-1.3.2.tar.gz",
+      "sourceSha256": "539abc4151cac4710f4ea85c40c2ca888986016c0f63af62a3f4b62a306f49b2",
+      "notices": [
+        {
+          "path": "haskell/zlib-clib-1.3.2/LICENSE",
+          "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+        }
+      ]
+    }
+  ],
+  "runtimeNotices": [
+    {
+      "path": "runtime/GCC-RUNTIME-EXCEPTION",
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    {
+      "path": "runtime/GHC-LICENSE",
+      "sha256": "e06c13b8a117652621781c15d622bd4c62c568307954f7136955b4b656d14ec1"
+    },
+    {
+      "path": "runtime/GMP-GPL-3.0",
+      "sha256": "e6037104443f9a7829b2aa7c5370d0789a7bda3ca65a0b904cdc0c2e285d9195"
+    },
+    {
+      "path": "runtime/GMP-LGPL-3.0",
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+    },
+    {
+      "path": "runtime/libffi-3.5.2-header-NOTICE",
+      "sha256": "cbc834f396e48c35f4d2e4219f126e1f5672a3f1ff0e30b763aa25e1760d8d6b"
+    },
+    {
+      "path": "runtime/libffi-LICENSE",
+      "sha256": "d5699fa516968e3a1550e6c902b7441c78856f2603d61bedd0b0662a26655366"
+    },
+    {
+      "path": "runtime/LLVM-compiler-rt-LICENSE",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "path": "runtime/MinGW-runtime-LICENSE",
+      "sha256": "e9b2dc02451ea29092a1f25fa0f3c07207ed421f1807dffb0c4e6dce69dee7bd"
+    },
+    {
+      "path": "runtime/MinGW-w64-NOTICE",
+      "sha256": "f38e6194bd3bfa1b654f118e5acefe0aead437bbe669eee43957ccc65a7127f1"
+    },
+    {
+      "path": "runtime/MinGW-winpthreads-LICENSE",
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177"
+    }
+  ],
+  "replaceableGmp": {
+    "package": "mingw-w64-x86_64-gmp",
+    "version": "6.3.0-2",
+    "license": "LGPL-3.0-or-later",
+    "binaryUrl": "https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-gmp-6.3.0-2-any.pkg.tar.zst",
+    "binarySha256": "8924433974c4add46cb46ea4f6ef283b5c5139d3f552375115b5580f855015cc",
+    "sourceUrl": "https://mirror.msys2.org/mingw/sources/mingw-w64-gmp-6.3.0-2.src.tar.zst",
+    "sourceSha256": "f288f944fd9609db220bcf6a8dd0703a5674eeb906ef35eb8485bb8192135994",
+    "upstreamSourceSha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+    "sourceFile": "sources/mingw-w64-gmp-6.3.0-2.src.tar.zst",
+    "dll": "mingw64/bin/libgmp-10.dll",
+    "importLibrary": "mingw64/lib/libgmp.dll.a"
+  }
+}

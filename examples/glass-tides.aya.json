@@ -1,0 +1,715 @@
+{
+  "assets": [],
+  "beatsPerBar": 4,
+  "clips": [
+    {
+      "gain": 1,
+      "id": "clip-0",
+      "length": 160,
+      "patternId": "p-pad",
+      "start": 0,
+      "trackId": "harmony",
+      "transpose": 0
+    },
+    {
+      "gain": 0.65,
+      "id": "clip-1",
+      "length": 24,
+      "patternId": "p-arp",
+      "start": 8,
+      "trackId": "arp",
+      "transpose": 0
+    },
+    {
+      "gain": 1,
+      "id": "clip-2",
+      "length": 128,
+      "patternId": "p-kick",
+      "start": 16,
+      "trackId": "drum-kick",
+      "transpose": 0
+    },
+    {
+      "gain": 1,
+      "id": "clip-3",
+      "length": 112,
+      "patternId": "p-snare",
+      "start": 32,
+      "trackId": "drum-snare",
+      "transpose": 0
+    },
+    {
+      "gain": 1,
+      "id": "clip-4",
+      "length": 120,
+      "patternId": "p-hat",
+      "start": 24,
+      "trackId": "drum-hat",
+      "transpose": 0
+    },
+    {
+      "gain": 1,
+      "id": "clip-5",
+      "length": 128,
+      "patternId": "p-bass",
+      "start": 16,
+      "trackId": "low",
+      "transpose": 0
+    },
+    {
+      "gain": 1,
+      "id": "clip-6",
+      "length": 64,
+      "patternId": "p-arp",
+      "start": 32,
+      "trackId": "arp",
+      "transpose": 0
+    },
+    {
+      "gain": 1,
+      "id": "clip-7",
+      "length": 48,
+      "patternId": "p-arp-var",
+      "start": 96,
+      "trackId": "arp",
+      "transpose": 0
+    },
+    {
+      "gain": 1,
+      "id": "clip-8",
+      "length": 32,
+      "patternId": "p-theme",
+      "start": 32,
+      "trackId": "melody",
+      "transpose": 0
+    },
+    {
+      "gain": 0.95,
+      "id": "clip-9",
+      "length": 32,
+      "patternId": "p-answer",
+      "start": 64,
+      "trackId": "melody",
+      "transpose": 0
+    },
+    {
+      "gain": 0.9,
+      "id": "clip-10",
+      "length": 32,
+      "patternId": "p-theme",
+      "start": 104,
+      "trackId": "melody",
+      "transpose": 0
+    },
+    {
+      "gain": 0.7,
+      "id": "clip-11",
+      "length": 16,
+      "patternId": "p-answer",
+      "start": 144,
+      "trackId": "melody",
+      "transpose": -12
+    },
+    {
+      "gain": 0.6,
+      "id": "clip-12",
+      "length": 12,
+      "patternId": "p-arp-var",
+      "start": 144,
+      "trackId": "arp",
+      "transpose": -12
+    }
+  ],
+  "id": "example-glass-tides",
+  "lengthBeats": 160,
+  "loop": {
+    "enabled": false,
+    "end": 96,
+    "start": 32
+  },
+  "masterGain": 0.68,
+  "name": "硝子の潮 — Glass Tides",
+  "patterns": [
+    {
+      "generator": {
+        "degrees": [
+          0
+        ],
+        "gate": 0.75,
+        "kind": "euclid",
+        "octaves": 1,
+        "pulses": 4,
+        "root": 36,
+        "rotation": 0,
+        "seed": 23,
+        "steps": 4,
+        "velocity": 0.85
+      },
+      "id": "p-kick",
+      "length": 4,
+      "name": "四つの波",
+      "notes": [],
+      "transforms": []
+    },
+    {
+      "generator": null,
+      "id": "p-snare",
+      "length": 4,
+      "name": "裏拍",
+      "notes": [
+        {
+          "duration": 0.2,
+          "id": "snare-1",
+          "pitch": 40,
+          "start": 1,
+          "velocity": 0.72
+        },
+        {
+          "duration": 0.2,
+          "id": "snare-2",
+          "pitch": 40,
+          "start": 3,
+          "velocity": 0.65
+        }
+      ],
+      "transforms": []
+    },
+    {
+      "generator": {
+        "degrees": [
+          0
+        ],
+        "gate": 0.75,
+        "kind": "euclid",
+        "octaves": 1,
+        "pulses": 9,
+        "root": 84,
+        "rotation": 0,
+        "seed": 23,
+        "steps": 16,
+        "velocity": 0.7
+      },
+      "id": "p-hat",
+      "length": 4,
+      "name": "五つの粒",
+      "notes": [],
+      "transforms": []
+    },
+    {
+      "generator": null,
+      "id": "p-bass",
+      "length": 16,
+      "name": "根と余白",
+      "notes": [
+        {
+          "duration": 0.65,
+          "id": "bass-note-0",
+          "pitch": 36,
+          "start": 0,
+          "velocity": 0.85
+        },
+        {
+          "duration": 0.65,
+          "id": "bass-note-1",
+          "pitch": 36,
+          "start": 3,
+          "velocity": 0.66
+        },
+        {
+          "duration": 0.65,
+          "id": "bass-note-2",
+          "pitch": 39.1578947368,
+          "start": 4,
+          "velocity": 0.85
+        },
+        {
+          "duration": 0.65,
+          "id": "bass-note-3",
+          "pitch": 39.1578947368,
+          "start": 7,
+          "velocity": 0.66
+        },
+        {
+          "duration": 0.65,
+          "id": "bass-note-4",
+          "pitch": 34.7368421053,
+          "start": 8,
+          "velocity": 0.85
+        },
+        {
+          "duration": 0.65,
+          "id": "bass-note-5",
+          "pitch": 34.7368421053,
+          "start": 11,
+          "velocity": 0.66
+        },
+        {
+          "duration": 0.65,
+          "id": "bass-note-6",
+          "pitch": 41.0526315789,
+          "start": 12,
+          "velocity": 0.85
+        },
+        {
+          "duration": 0.65,
+          "id": "bass-note-7",
+          "pitch": 43.5789473684,
+          "start": 14.5,
+          "velocity": 0.66
+        }
+      ],
+      "transforms": []
+    },
+    {
+      "generator": {
+        "degrees": [
+          0,
+          2,
+          -1,
+          3
+        ],
+        "gate": 0.75,
+        "kind": "chords",
+        "octaves": 1,
+        "pulses": 4,
+        "root": 60,
+        "rotation": 0,
+        "seed": 23,
+        "steps": 8,
+        "velocity": 0.68
+      },
+      "id": "p-pad",
+      "length": 32,
+      "name": "ゆっくり巡る和音",
+      "notes": [],
+      "transforms": []
+    },
+    {
+      "generator": {
+        "degrees": [
+          0,
+          2,
+          4,
+          6,
+          4,
+          2,
+          1,
+          4
+        ],
+        "gate": 0.75,
+        "kind": "arpeggio",
+        "octaves": 1,
+        "pulses": 5,
+        "root": 72,
+        "rotation": 0,
+        "seed": 23,
+        "steps": 16,
+        "velocity": 0.64
+      },
+      "id": "p-arp",
+      "length": 8,
+      "name": "上昇する水面",
+      "notes": [],
+      "transforms": []
+    },
+    {
+      "generator": {
+        "degrees": [
+          0,
+          2,
+          4,
+          6,
+          4,
+          2,
+          1,
+          4
+        ],
+        "gate": 0.75,
+        "kind": "arpeggio",
+        "octaves": 1,
+        "pulses": 5,
+        "root": 72,
+        "rotation": 0,
+        "seed": 23,
+        "steps": 16,
+        "velocity": 0.6
+      },
+      "id": "p-arp-var",
+      "length": 8,
+      "name": "回り込む水面",
+      "notes": [],
+      "transforms": [
+        {
+          "amount": 0,
+          "kind": "reverse"
+        },
+        {
+          "amount": 0.5,
+          "kind": "rotate"
+        },
+        {
+          "amount": 0.8,
+          "kind": "probability"
+        }
+      ]
+    },
+    {
+      "generator": null,
+      "id": "p-theme",
+      "length": 16,
+      "name": "灯の主題",
+      "notes": [
+        {
+          "duration": 1.5,
+          "id": "theme-note-0",
+          "pitch": 79.5789473684,
+          "start": 0,
+          "velocity": 0.65
+        },
+        {
+          "duration": 0.75,
+          "id": "theme-note-1",
+          "pitch": 77.0526315789,
+          "start": 2,
+          "velocity": 0.73
+        },
+        {
+          "duration": 1.8,
+          "id": "theme-note-2",
+          "pitch": 75.1578947368,
+          "start": 3,
+          "velocity": 0.81
+        },
+        {
+          "duration": 1,
+          "id": "theme-note-3",
+          "pitch": 72,
+          "start": 6,
+          "velocity": 0.65
+        },
+        {
+          "duration": 1.4,
+          "id": "theme-note-4",
+          "pitch": 73.8947368421,
+          "start": 8,
+          "velocity": 0.73
+        },
+        {
+          "duration": 0.6,
+          "id": "theme-note-5",
+          "pitch": 75.1578947368,
+          "start": 10,
+          "velocity": 0.81
+        },
+        {
+          "duration": 0.75,
+          "id": "theme-note-6",
+          "pitch": 77.0526315789,
+          "start": 11,
+          "velocity": 0.65
+        },
+        {
+          "duration": 2.5,
+          "id": "theme-note-7",
+          "pitch": 72,
+          "start": 13,
+          "velocity": 0.73
+        }
+      ],
+      "transforms": []
+    },
+    {
+      "generator": null,
+      "id": "p-answer",
+      "length": 16,
+      "name": "遠い返事",
+      "notes": [
+        {
+          "duration": 2,
+          "id": "answer-note-0",
+          "pitch": 84,
+          "start": 0,
+          "velocity": 0.65
+        },
+        {
+          "duration": 1,
+          "id": "answer-note-1",
+          "pitch": 82.1052631579,
+          "start": 3,
+          "velocity": 0.73
+        },
+        {
+          "duration": 2,
+          "id": "answer-note-2",
+          "pitch": 79.5789473684,
+          "start": 5,
+          "velocity": 0.81
+        },
+        {
+          "duration": 1.5,
+          "id": "answer-note-3",
+          "pitch": 77.0526315789,
+          "start": 9,
+          "velocity": 0.65
+        },
+        {
+          "duration": 3,
+          "id": "answer-note-4",
+          "pitch": 75.1578947368,
+          "start": 12,
+          "velocity": 0.73
+        }
+      ],
+      "transforms": []
+    }
+  ],
+  "schemaVersion": 1,
+  "tempo": 108,
+  "tracks": [
+    {
+      "assetId": null,
+      "automation": [],
+      "color": "#77b8ac",
+      "gain": 0.62,
+      "id": "drum-kick",
+      "instrument": "kick",
+      "mute": false,
+      "name": "深い鼓動",
+      "pan": 0,
+      "patch": {
+        "attack": 0.01,
+        "cutoff": 7000,
+        "delayBeats": 0.75,
+        "delayFeedback": 0.32,
+        "delaySend": 0,
+        "release": 0.12,
+        "resonance": 0.12,
+        "tone": 0.4
+      },
+      "solo": false
+    },
+    {
+      "assetId": null,
+      "automation": [],
+      "color": "#77b8ac",
+      "gain": 0.26,
+      "id": "drum-snare",
+      "instrument": "snare",
+      "mute": false,
+      "name": "紙のスネア",
+      "pan": 0.04,
+      "patch": {
+        "attack": 0.01,
+        "cutoff": 7000,
+        "delayBeats": 0.75,
+        "delayFeedback": 0.32,
+        "delaySend": 0.08,
+        "release": 0.12,
+        "resonance": 0.12,
+        "tone": 0.5
+      },
+      "solo": false
+    },
+    {
+      "assetId": null,
+      "automation": [
+        {
+          "parameter": "gain",
+          "points": [
+            {
+              "beat": 0,
+              "value": 0.08
+            },
+            {
+              "beat": 32,
+              "value": 0.17
+            },
+            {
+              "beat": 96,
+              "value": 0.13
+            },
+            {
+              "beat": 128,
+              "value": 0.2
+            },
+            {
+              "beat": 152,
+              "value": 0.02
+            }
+          ]
+        }
+      ],
+      "color": "#77b8ac",
+      "gain": 0.16,
+      "id": "drum-hat",
+      "instrument": "hat",
+      "mute": false,
+      "name": "細かな波",
+      "pan": -0.24,
+      "patch": {
+        "attack": 0.01,
+        "cutoff": 7000,
+        "delayBeats": 0.75,
+        "delayFeedback": 0.32,
+        "delaySend": 0.07,
+        "release": 0.07,
+        "resonance": 0.12,
+        "tone": 0.5
+      },
+      "solo": false
+    },
+    {
+      "assetId": null,
+      "automation": [],
+      "color": "#77b8ac",
+      "gain": 0.35,
+      "id": "low",
+      "instrument": "bass",
+      "mute": false,
+      "name": "潮の低音",
+      "pan": 0,
+      "patch": {
+        "attack": 0.01,
+        "cutoff": 1600,
+        "delayBeats": 0.75,
+        "delayFeedback": 0.32,
+        "delaySend": 0.04,
+        "release": 0.2,
+        "resonance": 0.12,
+        "tone": 0.3
+      },
+      "solo": false
+    },
+    {
+      "assetId": null,
+      "automation": [
+        {
+          "parameter": "cutoff",
+          "points": [
+            {
+              "beat": 0,
+              "value": 700
+            },
+            {
+              "beat": 32,
+              "value": 2500
+            },
+            {
+              "beat": 88,
+              "value": 3900
+            },
+            {
+              "beat": 120,
+              "value": 1700
+            },
+            {
+              "beat": 144,
+              "value": 3200
+            },
+            {
+              "beat": 160,
+              "value": 600
+            }
+          ]
+        },
+        {
+          "parameter": "gain",
+          "points": [
+            {
+              "beat": 0,
+              "value": 0.04
+            },
+            {
+              "beat": 12,
+              "value": 0.24
+            },
+            {
+              "beat": 128,
+              "value": 0.23
+            },
+            {
+              "beat": 160,
+              "value": 0.02
+            }
+          ]
+        }
+      ],
+      "color": "#77b8ac",
+      "gain": 0.22,
+      "id": "harmony",
+      "instrument": "pad",
+      "mute": false,
+      "name": "十九の硝子",
+      "pan": -0.1,
+      "patch": {
+        "attack": 0.45,
+        "cutoff": 2800,
+        "delayBeats": 0.75,
+        "delayFeedback": 0.32,
+        "delaySend": 0.18,
+        "release": 2.4,
+        "resonance": 0.12,
+        "tone": 0.28
+      },
+      "solo": false
+    },
+    {
+      "assetId": null,
+      "automation": [],
+      "color": "#77b8ac",
+      "gain": 0.21,
+      "id": "arp",
+      "instrument": "pluck",
+      "mute": false,
+      "name": "水面の粒",
+      "pan": 0.3,
+      "patch": {
+        "attack": 0.01,
+        "cutoff": 6200,
+        "delayBeats": 0.75,
+        "delayFeedback": 0.4,
+        "delaySend": 0.32,
+        "release": 0.7,
+        "resonance": 0.12,
+        "tone": 0.42
+      },
+      "solo": false
+    },
+    {
+      "assetId": null,
+      "automation": [],
+      "color": "#77b8ac",
+      "gain": 0.22,
+      "id": "melody",
+      "instrument": "bell",
+      "mute": false,
+      "name": "ひとつの灯",
+      "pan": 0.08,
+      "patch": {
+        "attack": 0.004,
+        "cutoff": 7000,
+        "delayBeats": 0.75,
+        "delayFeedback": 0.32,
+        "delaySend": 0.26,
+        "release": 1.8,
+        "resonance": 0.12,
+        "tone": 0.26
+      },
+      "solo": false
+    }
+  ],
+  "tuning": {
+    "divisions": 19,
+    "referenceHz": 440,
+    "root": 60,
+    "scale": [
+      0,
+      3,
+      5,
+      8,
+      11,
+      13,
+      16
+    ]
+  }
+}

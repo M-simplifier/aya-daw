@@ -1,0 +1,29 @@
+{
+  "screenshot": {
+    "file": "aya-studio.jpg",
+    "description": "Unmodified actual Aya editor capture; Glass Tides open, native audio connected;2026-10-30",
+    "sha256": "76eaaf2ceac5c10c1d93c95baccd4cbd366f5cb9a90abc8b0ef8578f799aece0"
+  },
+  "audio": {
+    "file": "glass-tides.wav",
+    "source": "examples/Glass-Tides.wav",
+    "description": "Original Aya native-engine export; no browser synthesis or third-party music",
+    "sha256": "432c5a807c545ccf0eee2a10dbf798fabe0708cc1b28f212c5612e53f06fc733",
+    "durationSeconds": 97.27225,
+    "channels": 2,
+    "sampleRate": 48000,
+    "bits": 24
+  },
+  "waveform": {
+    "file": "glass-tides-wave.svg",
+    "description": "Peak envelope derived from the original stereo WAV"
+  },
+  "art": {
+    "file": "pattern-weave.svg",
+    "description": "Original programmatically drawn score study, illustrative"
+  },
+  "project": {
+    "file": "glass-tides.aya.json",
+    "source": "examples/glass-tides.aya.json"
+  }
+}

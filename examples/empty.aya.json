@@ -1,0 +1,55 @@
+{
+  "assets": [],
+  "beatsPerBar": 4,
+  "clips": [],
+  "id": "aya-project",
+  "lengthBeats": 32,
+  "loop": {
+    "enabled": false,
+    "end": 16,
+    "start": 0
+  },
+  "masterGain": 0.75,
+  "name": "無題の曲",
+  "patterns": [],
+  "schemaVersion": 1,
+  "tempo": 108,
+  "tracks": [
+    {
+      "assetId": null,
+      "automation": [],
+      "color": "#77b8ac",
+      "gain": 0.55,
+      "id": "track-1",
+      "instrument": "pad",
+      "mute": false,
+      "name": "トラック 1",
+      "pan": 0,
+      "patch": {
+        "attack": 0.01,
+        "cutoff": 7000,
+        "delayBeats": 0.75,
+        "delayFeedback": 0.32,
+        "delaySend": 0.15,
+        "release": 0.35,
+        "resonance": 0.12,
+        "tone": 0.5
+      },
+      "solo": false
+    }
+  ],
+  "tuning": {
+    "divisions": 12,
+    "referenceHz": 440,
+    "root": 60,
+    "scale": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      8,
+      10
+    ]
+  }
+}

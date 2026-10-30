@@ -1,0 +1,9 @@
+packages: . audio
+optimization: 1
+tests: True
+constraints: aeson == 2.2.5.0, warp == 3.4.16, http2 == 5.4.9
+
+package aya
+  optimization: 2
+package aya-audio
+  optimization: 2

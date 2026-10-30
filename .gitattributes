@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+/licenses/** -text
+/third-party/notices/** -text
+/third-party/sources/** -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.woff2 -text

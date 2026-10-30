@@ -1,0 +1,36 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: haskell-actions/setup@0f8e8c99d88aeb3fbfd523f1ef2c6f762d10d64d # v2.12.1
+        with:
+          ghc-version: '9.14.1'
+          cabal-version: '3.18.2.0'
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Fetch the package index for a fresh runner
+        shell: pwsh
+        run: cabal update
+      - name: Build redistributable executable and run musical/audio selftests
+        shell: pwsh
+        run: ./scripts/build.ps1 -Release -Tests
+      - name: Check immutable editing, compile ordering, and DOM consumers
+        shell: pwsh
+        run: node --test tests/ui/*.test.mjs
+      - name: Check static website
+        shell: pwsh
+        run: node site/check.mjs

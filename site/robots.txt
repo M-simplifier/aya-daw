@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://m-simplifier.github.io/aya-daw/sitemap.xml
