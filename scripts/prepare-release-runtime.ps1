@@ -6,12 +6,16 @@ $ayaRuntime = Join-Path $Root '.work\runtime'
 $ayaArchive = Join-Path $ayaRuntime 'gmp.pkg.tar.zst'
 $ayaExtracted = Join-Path $ayaRuntime 'gmp'
 $ayaSource = Join-Path $Root ('third-party\' + $ayaLock.gmp.sourceFile.Replace('/','\'))
+$ayaBundledBinary = Join-Path $Root ('third-party\' + $ayaLock.gmp.binaryFile.Replace('/','\'))
 New-Item -ItemType Directory -Path $ayaRuntime,$ayaExtracted -Force | Out-Null
 if ((Get-FileHash -LiteralPath $ayaSource -Algorithm SHA256).Hash -ne $ayaLock.gmp.sourceSha256) {
   throw 'The committed GMP corresponding source archive does not match runtime-lock.json.'
 }
+if ((Get-FileHash -LiteralPath $ayaBundledBinary -Algorithm SHA256).Hash -ne $ayaLock.gmp.binarySha256) {
+  throw 'The committed original GMP binary package does not match runtime-lock.json.'
+}
 if (-not (Test-Path -LiteralPath $ayaArchive)) {
-  Invoke-WebRequest -UseBasicParsing -Uri $ayaLock.gmp.binaryUrl -OutFile $ayaArchive
+  Copy-Item -LiteralPath $ayaBundledBinary -Destination $ayaArchive
 }
 if ((Get-FileHash -LiteralPath $ayaArchive -Algorithm SHA256).Hash -ne $ayaLock.gmp.binarySha256) {
   throw 'GMP runtime checksum mismatch. Remove .work/runtime/gmp.pkg.tar.zst before retrying.'

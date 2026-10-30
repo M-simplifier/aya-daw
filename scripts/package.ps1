@@ -70,15 +70,22 @@ while ($ayaPending.Count -gt 0) {
 if ($LASTEXITCODE -ne 0) { throw 'Could not collect dependency notices.' }
 $ayaCommit = 'source-archive'
 if (Get-Command git -ErrorAction SilentlyContinue) {
-  $ayaCommit = & git rev-parse HEAD 2>$null
-  if ($LASTEXITCODE -ne 0) { $ayaCommit = 'uncommitted' }
+  $ayaGitRoot = & git rev-parse --show-toplevel 2>$null
+  if ($LASTEXITCODE -eq 0 -and [System.IO.Path]::GetFullPath(([string]$ayaGitRoot).Trim()) -eq $ayaRoot) {
+    $ayaCommit = & git rev-parse HEAD 2>$null
+    if ($LASTEXITCODE -ne 0) { $ayaCommit = 'uncommitted' }
+  }
 }
 $ayaBuildInfo = [ordered]@{version='0.1.0';packageVersion='0.1.0.0';source='https://github.com/M-simplifier/aya-daw';commit=([string]$ayaCommit).Trim();compiler=(& $ayaTools.Ghc --numeric-version).Trim();binaryAudit=$ayaAudit;gmp=$ayaRuntime.Lock.gmp}
 [System.IO.File]::WriteAllText((Join-Path $ayaStage 'BUILD-INFO.json'),($ayaBuildInfo | ConvertTo-Json -Depth 8),[System.Text.UTF8Encoding]::new($false))
 $ayaZip = Join-Path $ayaRoot 'dist\Aya-Windows-x64.zip'
 Compress-Archive -LiteralPath $ayaStage -DestinationPath $ayaZip -Force
+$ayaReleaseWave = Join-Path $ayaRoot 'dist\Glass-Tides.wav'
+$ayaReleaseProject = Join-Path $ayaRoot 'dist\glass-tides.aya.json'
+Copy-Item -LiteralPath (Join-Path $ayaRoot 'site\assets\glass-tides.wav') -Destination $ayaReleaseWave -Force
+Copy-Item -LiteralPath (Join-Path $ayaRoot 'examples\glass-tides.aya.json') -Destination $ayaReleaseProject -Force
 $ayaChecksums = @()
-foreach ($ayaAsset in @($ayaZip,(Join-Path $ayaRoot 'examples\Glass-Tides.wav'),(Join-Path $ayaRoot 'examples\glass-tides.aya.json'))) {
+foreach ($ayaAsset in @($ayaZip,$ayaReleaseWave,$ayaReleaseProject)) {
   $ayaChecksums += ((Get-FileHash -LiteralPath $ayaAsset -Algorithm SHA256).Hash.ToLowerInvariant()+'  '+(Split-Path $ayaAsset -Leaf))
 }
 [System.IO.File]::WriteAllText((Join-Path $ayaRoot 'dist\SHA256SUMS.txt'),($ayaChecksums -join "`n")+"`n",[System.Text.UTF8Encoding]::new($false))

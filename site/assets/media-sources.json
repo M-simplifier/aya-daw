@@ -6,8 +6,8 @@
   },
   "audio": {
     "file": "glass-tides.wav",
-    "source": "examples/Glass-Tides.wav",
-    "description": "Original Aya native-engine export; no browser synthesis or third-party music",
+    "sourceProject": "examples/glass-tides.aya.json",
+    "description": "Original Aya native-engine full render, tracked in site/assets; no browser synthesis or third-party music",
     "sha256": "432c5a807c545ccf0eee2a10dbf798fabe0708cc1b28f212c5612e53f06fc733",
     "durationSeconds": 97.27225,
     "channels": 2,
@@ -16,6 +16,7 @@
   },
   "waveform": {
     "file": "glass-tides-wave.svg",
+    "source": "site/assets/glass-tides.wav",
     "description": "Peak envelope derived from the original stereo WAV"
   },
   "art": {
@@ -24,6 +25,7 @@
   },
   "project": {
     "file": "glass-tides.aya.json",
-    "source": "examples/glass-tides.aya.json"
+    "source": "examples/glass-tides.aya.json",
+    "sha256": "cee42daec50e5f3dee7653501dde8d52a698ce3902c9304404da1712fb380cd7"
   }
 }

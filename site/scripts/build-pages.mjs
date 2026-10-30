@@ -1,7 +1,7 @@
 import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
-import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
+import {sha256,verifyOriginalRender,verifyOriginalProject} from './media.mjs';
 
 const site=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const repo=path.resolve(site,'..');
@@ -89,13 +89,14 @@ async function buildAssets(){
  await mkdir(path.join(site,'assets'),{recursive:true});
  const image=path.join(site,'assets/aya-studio.jpg');
  await readFile(image);
- await copyFile(path.join(repo,'examples/Glass-Tides.wav'),path.join(site,'assets/glass-tides.wav'));
- await copyFile(path.join(repo,'examples/glass-tides.aya.json'),path.join(site,'assets/glass-tides.aya.json'));
+ // The full render is already tracked here; local ignored export folders are
+ // not inputs to site maintenance or source-only CI.
  const wav=await readFile(path.join(site,'assets/glass-tides.wav'));
- let offset=12,format,data;
- while(offset+8<=wav.length){const tag=wav.toString('ascii',offset,offset+4),size=wav.readUInt32LE(offset+4);if(tag==='fmt ')format={channels:wav.readUInt16LE(offset+10),sampleRate:wav.readUInt32LE(offset+12),bits:wav.readUInt16LE(offset+22)};if(tag==='data')data={offset:offset+8,size};offset+=8+size+(size%2);}
- if(!format||!data||format.bits!==24||format.channels!==2)throw new Error('Expected the original stereo24bit Aya render');
- const frames=data.size/6,bins=400,columns=[];
+ const {format,data,frames,durationSeconds}=verifyOriginalRender(wav);
+ const projectBytes=await readFile(path.join(repo,'examples/glass-tides.aya.json'));
+ verifyOriginalProject(projectBytes);
+ await copyFile(path.join(repo,'examples/glass-tides.aya.json'),path.join(site,'assets/glass-tides.aya.json'));
+ const bins=400,columns=[];
  for(let bin=0;bin<bins;bin++){let peak=0;const from=Math.floor(bin*frames/bins),to=Math.floor((bin+1)*frames/bins);for(let frame=from;frame<to;frame+=24){const at=data.offset+frame*6;peak=Math.max(peak,Math.abs(wav.readIntLE(at,3)/8388608),Math.abs(wav.readIntLE(at+3,3)/8388608));}columns.push(`<path d="M${bin*3+1.5} ${50-peak*45}v${Math.max(1,peak*90)}"/>`);}
  await writeFile(path.join(site,'assets/glass-tides-wave.svg'),`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"><g stroke="#c9b77d" stroke-width="1.3" opacity=".9">${columns.join('')}</g><path d="M0 50H1200" stroke="#c9b77d" opacity=".13"/></svg>`);
  const art=[];
@@ -103,8 +104,7 @@ async function buildAssets(){
  for(let i=0;i<16;i++){const x=90+i*27.5,hit=(i*5)%16<5;art.push(`<path d="M${x} 105V460" stroke="#bfc4b0" stroke-width=".6" opacity=".4"/><circle cx="${x}" cy="105" r="${hit?4.5:1.5}" fill="${hit?'#a87d39':'#9daa8c'}"/>`);if(hit)art.push(`<rect x="${x}" y="${333+(i%4)*21}" width="39" height="8" fill="#a98a4b" opacity=".75"/>`);}
  for(let i=0;i<9;i++)art.push(`<path d="M65 ${305+i*21}H555" stroke="#b9bfaa" stroke-width=".6" opacity=".5"/>`);
  await writeFile(path.join(site,'assets/pattern-weave.svg'),`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600"><circle cx="320" cy="287" r="226" fill="#e9e6d5" opacity=".62"/><circle cx="320" cy="287" r="226" fill="none" stroke="#adb69c" stroke-width=".6"/><circle cx="320" cy="287" r="213" fill="none" stroke="#b7bea9" stroke-width=".45" opacity=".5"/>${art.join('')}<path d="M80 545H550" stroke="#9fa98f" stroke-width=".7"/><text x="80" y="565" font-family="monospace" font-size="8" letter-spacing="2" fill="#7e8b6d">16 STEPS</text><text x="550" y="565" text-anchor="end" font-family="monospace" font-size="8" letter-spacing="2" fill="#a87d39">5 NOTES · INFINITE DIRECTIONS</text></svg>`);
- const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
- await writeFile(path.join(site,'assets/media-sources.json'),JSON.stringify({screenshot:{file:'aya-studio.jpg',description:'Unmodified actual Aya editor capture; Glass Tides open, native audio connected;2026-10-30',sha256:hash(await readFile(image))},audio:{file:'glass-tides.wav',source:'examples/Glass-Tides.wav',description:'Original Aya native-engine export; no browser synthesis or third-party music',sha256:hash(wav),durationSeconds:frames/format.sampleRate,...format},waveform:{file:'glass-tides-wave.svg',description:'Peak envelope derived from the original stereo WAV'},art:{file:'pattern-weave.svg',description:'Original programmatically drawn score study, illustrative'},project:{file:'glass-tides.aya.json',source:'examples/glass-tides.aya.json'}},null,2));
+ await writeFile(path.join(site,'assets/media-sources.json'),JSON.stringify({screenshot:{file:'aya-studio.jpg',description:'Unmodified actual Aya editor capture; Glass Tides open, native audio connected;2026-10-30',sha256:sha256(await readFile(image))},audio:{file:'glass-tides.wav',sourceProject:'examples/glass-tides.aya.json',description:'Original Aya native-engine full render, tracked in site/assets; no browser synthesis or third-party music',sha256:sha256(wav),durationSeconds,...format},waveform:{file:'glass-tides-wave.svg',source:'site/assets/glass-tides.wav',description:'Peak envelope derived from the original stereo WAV'},art:{file:'pattern-weave.svg',description:'Original programmatically drawn score study, illustrative'},project:{file:'glass-tides.aya.json',source:'examples/glass-tides.aya.json',sha256:sha256(projectBytes)}},null,2));
 }
 
 await buildAssets();

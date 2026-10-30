@@ -3,6 +3,7 @@ import {readFile,readdir,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
+import {renderSHA256,projectSHA256,verifyOriginalRender,verifyOriginalProject} from './scripts/media.mjs';
 
 const root=path.dirname(fileURLToPath(import.meta.url)),repo=path.resolve(root,'..');
 const publicBase=new URL('https://m-simplifier.github.io/aya-daw/');
@@ -69,10 +70,14 @@ for(const route of routes){
 
 const media=JSON.parse(await read('assets/media-sources.json'));
 for(const item of [media.screenshot,media.audio]){const bytes=await readFile(path.join(root,'assets',item.file));assert.equal(createHash('sha256').update(bytes).digest('hex'),item.sha256,`Media hash differs: ${item.file}`);}
-const wav=await readFile(path.join(root,'assets/glass-tides.wav'));assert.equal(wav.toString('ascii',0,4),'RIFF');assert.equal(wav.toString('ascii',8,12),'WAVE');
-assert.equal(media.audio.channels,2);assert.equal(media.audio.sampleRate,48000);assert.equal(media.audio.bits,24);assert.ok(Math.abs(media.audio.durationSeconds-97.27225)<.0001);
-assert.equal(createHash('sha256').update(wav).digest('hex'),createHash('sha256').update(await readFile(path.join(repo,'examples/Glass-Tides.wav'))).digest('hex'),'Public audio is the original Aya export');
-const project=JSON.parse(await read('assets/glass-tides.aya.json'));assert.equal(project.schemaVersion,1);assert.equal(project.tuning.divisions,19);assert.equal(project.tracks.length,7);assert.equal(project.lengthBeats,160);
+const wav=await readFile(path.join(root,'assets/glass-tides.wav'));
+const {format,durationSeconds}=verifyOriginalRender(wav);
+assert.equal(media.audio.sha256,renderSHA256);
+for(const [key,value] of Object.entries({...format,durationSeconds}))assert.equal(media.audio[key],value,`Audio metadata differs: ${key}`);
+const projectBytes=await readFile(path.join(root,'assets/glass-tides.aya.json'));
+const project=verifyOriginalProject(projectBytes);
+assert.equal(media.project.sha256,projectSHA256);
+assert.deepEqual(projectBytes,await readFile(path.join(repo,'examples/glass-tides.aya.json')),'Site project must match the tracked example exactly');
 assert.match(await read('main.js'),/prefers|audio|copy/);assert.doesNotMatch(await read('main.js'),/AudioContext|OscillatorNode|fetch\(['"]\/api/);
 assert.match(await read('style.css'),/prefers-reduced-motion/);
 assert.match(await read('sitemap.xml'),/en\/developers\//);

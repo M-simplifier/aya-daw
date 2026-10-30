@@ -3,6 +3,7 @@
 /licenses/** -text
 /third-party/notices/** -text
 /third-party/sources/** -text
+/third-party/binaries/** -text
 *.png -text
 *.jpg -text
 *.jpeg -text

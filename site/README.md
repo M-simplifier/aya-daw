@@ -26,9 +26,16 @@ all four committed pages and the original score/waveform assets. This refresh
 step is for maintainers; readers and Pages deployment need no build.
 
 `assets/media-sources.json` records provenance and content hashes. The actual
-editor capture is unmodified. The music is the original stereo 48 kHz/24-bit
-Aya export at `../examples/Glass-Tides.wav`; the waveform is derived from it.
-The score artwork and explanatory browser illustration are original work.
+editor capture is unmodified. The music is the complete original stereo
+48 kHz/24-bit Aya export, tracked at `assets/glass-tides.wav`; the waveform is
+derived from that file. Regeneration does not require an ignored local export.
+`scripts/media.mjs` pins the independently verified full-render SHA-256
+`432c5a807c545ccf0eee2a10dbf798fabe0708cc1b28f212c5612e53f06fc733`
+and its exact project. Both the build and check validate the actual PCM format,
+complete duration and digest. The downloaded project must also match the
+tracked `../examples/glass-tides.aya.json` byte for byte. Verify a replacement
+render before refreshing these paired pins. The score artwork and explanatory
+browser illustration are original work.
 
 Aya's own code is MIT-licensed. The Windows app's third-party dependency
 notices and redistribution conditions are linked through `../THIRD-PARTY.md`;

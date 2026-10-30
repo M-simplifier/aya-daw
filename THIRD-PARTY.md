@@ -19,6 +19,15 @@ repository and Windows ZIP at
 network access is needed to obtain it. Exact source and binary URLs and SHA-256
 values are recorded in [runtime-lock.json](third-party/runtime-lock.json).
 
+The exact original MSYS2 binary package is vendored in the source repository
+under `third-party/binaries/`
+and checked against that same published hash, so source builds and CI do not
+depend on an interactive mirror/CDN download. The package is preserved verbatim.
+Its original manuals retain GNU FDL 1.3-or-later terms, no invariant sections,
+and the original cover texts; their notice/license and complete source are
+retained. The application ZIP extracts only the needed GMP DLL from this binary
+package, while retaining the complete corresponding source archive.
+
 The DLL's PE imports are `KERNEL32.dll` and `msvcrt.dll`, supplied by Windows.
 Microsoft system DLLs are not redistributed. The MSYS2 binary was built with
 GCC 13.2.0; the GCC Runtime Library Exception and GPL v3 text are included for
@@ -58,6 +67,7 @@ packager does **not** redistribute it as an MIT-only executable.
 
 Use `scripts/build.ps1 -Release -Tests` and `scripts/package.ps1` to create a
 redistribution-ready Windows package. The release path verifies the pinned GMP
-package, links its import library ahead of GHC's static archives, checks that
-the result imports `libgmp-10.dll`, collects notices and includes corresponding
-source. It does not modify the installed compiler or package database.
+package from the vendored original, links its import library ahead of GHC's
+static archives, checks that the result imports `libgmp-10.dll`, collects notices
+and includes corresponding source. It does not modify the installed compiler
+or package database.

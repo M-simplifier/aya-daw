@@ -9,6 +9,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   windows:
     runs-on: windows-latest
@@ -22,6 +26,9 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: '24'
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
       - name: Fetch the package index for a fresh runner
         shell: pwsh
         run: cabal update
@@ -34,3 +41,6 @@ jobs:
       - name: Check static website
         shell: pwsh
         run: node site/check.mjs
+      - name: Build the complete package from the tracked source tree
+        shell: pwsh
+        run: ./scripts/package.ps1 -SkipBuild
